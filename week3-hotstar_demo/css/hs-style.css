@@ -1,0 +1,94 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(2, 2, 46);
+}
+.navigation img{
+    width: 100px;
+    height: 100px;
+}
+.navigation{
+    width: 150px;
+    position: fixed;
+    height: 100%;
+    background-color: rgb(2, 2, 46);
+    box-shadow: 2px 8px 10px white;
+}
+.categories img{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories img:hover{
+    box-shadow: 2px 2px 10px white;
+    border-radius: 10px;
+}
+.categories p{
+    color: wheat;
+}
+#slider{
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+    left: 20vh;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#slider img{
+    width: 100vw;
+    animation: slide 20s infinite;
+    animation-delay: 6s;
+}
+#slider img:hover{
+    cursor: pointer;
+}
+@keyframes slide {
+    0% {transform: translateX(0);}
+    33%{transform: translateX(-100%);}
+    66%{transform: translateX(-200%);}
+    100%{transform: translateX(0);}
+}
+.latest-relase{
+    position: absolute;
+    left: 20vh;
+    top: 30vw;
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+    gap: 20px;
+}
+.latest-relase img:hover{
+    cursor: pointer;
+    padding: 0px 100px;
+    
+}
+h3{
+    background-color: transparent;
+    color: white;
+    display: block;
+}
+.Recommed-movies{
+    position: absolute;
+    left: 20vh;
+    top: 55vw;
+    display: flex;
+    flex-direction: row;
+    background-color:black;
+    gap: 20px;
+}
+.Recommed-movies img:hover{
+    cursor: pointer;
+    padding: 0px 100px;
+}
+.movie-container{
+    width: 100%;
+    background-color: black;
+}

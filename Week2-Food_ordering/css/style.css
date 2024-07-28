@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playwrite CZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+}
+li,ul,header{
+    display: flex;
+    flex-direction:row;
+    padding: 15px;
+    color: white;
+}
+ul{
+  margin-left: 125vh; 
+  padding: 0; 
+}
+header{
+    background-color: rgb(255, 44, 44);
+    
+}
+header>h1{
+    font-size: 45px;
+}
+.navigation li:hover{
+    border-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    background-color: rgb(84, 6, 167);
+}
+.todaytip{
+    position: fixed;
+    
+    width: 30%;
+    position: relative;
+    
+    background-color:white;
+    opacity: 0.9;
+    
+}
+.Maincontainer{
+    height:560px;
+    background-image: url("images/Beige\ And\ Orange\ Modern\ Indian\ Food\ Poha\ YouTube\ Thumbnail\ _20240721_134354_0000.png");
+    background-position: center;
+    
+}
+
+.food-items{
+    color: whitesmoke;
+    background-color:rgb(255, 143, 44);
+    width: 180px;
+    height: 200px;
+    margin: 60px;
+    border-radius: 5px;
+    
+}
+.Menucontainer  h2{
+    background-color: rgb(255, 18, 18);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+.foods{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-row: auto;
+    
+    margin: 30px;
+    
+}
+.food-items figure,figcaption,button{
+    margin-top: 10px;
+}
+
+.food-items button{
+    background-color: transparent;
+    color: white;
+    border-style: none;
+}
+.food-items button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 40, 40);
+    font-size: 30x;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
