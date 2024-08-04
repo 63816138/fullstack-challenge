@@ -1,0 +1,61 @@
+/* Universal styles
+ ----------------------------------------------------------------------------------------------------------------------*/
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+
+/* Header
+---------------------------------------------------------------------------------------------------------------------- */
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    
+}
+.Header ul{
+    display: flex;
+}
+.Header li{
+    list-style: none;
+    padding: 20px 10px;
+    text-shadow: 2px 2px 10px black;
+}
+.Header li:hover{
+    background-color: white;
+    color: black;
+
+}
+.Header h1{
+    padding: 10px;
+}
+.Header a{
+    text-decoration: none;
+    color: white;
+}
+/* Background Section
+------------------------------------------------------------------------------------------------------------------------------- */
+section{
+    background:url(../images/About.png) no-repeat center/cover;
+    width: 100vw;
+    height: 90vh;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  color: white;
+  font-style: normal;
+  box-shadow: 2px 2px 10px white;
+}
+section h1{
+    position: fixed;
+    top: 30vh;
+    left: 25vw;
+    font-size: 50px;
+    text-shadow: 1px 1px 10px white;
+}
