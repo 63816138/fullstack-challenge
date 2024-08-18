@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.svg">
+    <link rel="stylesheet" href="../css/stack.css">
+    <title>Projects</title>
+</head>
+<body>
+    <header class="Header">
+        <h1>Protfolio</h1>
+        <nav name="other device width" class="lap-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="stack.html">Stacks & Certificates</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <nav name="Mobile responsive" class="mob-nav" >
+            <div class="menu-icon" onclick="contentshow()" ondblclick="contentshowhide()">&#9776;</div>
+                <ul class="nav-links">
+                    <li class="list1"><a href="index.html" class="list1">Home</a></li>
+                    <li class="list2"><a href="projects.html">Projects</a></li>
+                    <li class="list3"><a href="stack.html">Stacks & Certificates</a></li>
+                    <li  class="list4"><a href="html/resume.html">Resume</a></li>
+                    <li  class="list5"><a href="html/contact.html">contact</a></li>
+                </ul>
+        </nav>
+        
+    </header>
+
+
+
+    <script>
+        const contentshow=()=>{
+            const linkvar=document.querySelector(".nav-links");
+            linkvar.style="display:block;"
+        }
+        const contentshowhide=()=>{
+            const linkvar=document.querySelector(".nav-links");
+            linkvar.style="display:none;"
+            
+        }
+    </script>
+</body>
+</html>

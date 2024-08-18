@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/resume.css">
+    <link rel="icon" href="../images/icon.svg">
+    <title>Mugesh R | Resume</title>
+</head>
+<body>
+    <section class="resume-background">
+
+    </section>
+    <div class="resume-section">
+        <header class="Header">
+            <h1>Protfolio</h1>
+            <nav class="lap-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="stack.html">Stacks & certificates</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <nav name="Mobile responsive" class="mob-nav" >
+                <div class="menu-icon" onclick="contentshow()" ondblclick="contentshowhide()">&#9776;</div>
+                    <ul class="nav-links">
+                        <li class="list2"><a href="">Projects</a></li>
+                        <li class="list3"><a href="stack.html">Stacks & certificates</a></li>
+                        <li class="list4"><a href="../index.html">Home</a></li>
+                        <li  class="list5"><a href="resume.html">Resume</a></li>
+                        <li  class="list6"><a href="contact.html">contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+        
+        <div class="resume-content">
+            <div class="items">
+                <h3>About</h3>
+                <p>I'm Mugesh R from Salem, Tamilnadu . <br>full-stack developer (MERN) with expertise in AI </p>
+            </div>
+            <div class="items">
+                <h3>Educational</h3>
+                <p>
+                    <b>Mahendra Engineering College</b>,Namakkal <br>BE-CSE <br>Batch | 2022-2026 <br>CGPA | 8.34
+                </p>
+                <P><B>G.H.M.H.S.S</B>,salem <br>Higher Secondary <br>Batch | 2022-2022 <br>Percentage | 75.5%</P>
+            </div>
+            <div class="items">
+                <h3>Projects</h3>
+                <h4><b>Task Management--</b>Basic To-Do-List project</h4>
+                <p>Using the basic concept of HTML5,CSS & JavaScript to make a simple Task Creation,Deletion,Edit and Remainder Operations</p>
+                <h4><b>Soil Analysis--</b> Basic Soil analuser project for Agriculture</h4>
+                <p>The concept of this project is to analyse the soil and identifying the soil moisture,PH value and temperature and anlayse based on the value and find the suitable crop of that soil </p>
+            </div>
+            <div class="items">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>c</li>
+                    <li>SQL</li>
+                    <li>DSA</li>
+                </ul>
+            </div>
+            <div class="items">
+                <h3>Languages</h3>
+                <ul>
+                    <li>Tamil</li>
+                    <li>English</li>
+                    <li>Japanese</li>
+                </ul>
+            </div>
+            <button onclick="downloadPDF()"><img src="../images/download.svg" alt="" >Download</button> 
+        </div>
+    </div>
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = '../pdf/Resume (2).docx';  // Replace with the actual URL of the PDF file
+            link.download = 'Resume (2).docx';  // This will be the name of the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+        const contentshow=()=>{
+            const linkvar=document.querySelector(".nav-links");
+            linkvar.style="display:block;"
+        }
+        const contentshowhide=()=>{
+            const linkvar=document.querySelector(".nav-links");
+            linkvar.style="display:none;"
+            
+        }
+    
+
+    </script>
+</body>
+</html>
