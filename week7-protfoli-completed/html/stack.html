@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stack.css">
+    <link rel="stylesheet"  href="../css/header.css">
+    <title>Stack | Certificates</title>
+</head>
+<body>
+    <header class="Header">
+        <h1>Protfolio</h1>
+        <nav name="other device width" class="lap-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="stack.html">Stacks & Certificates</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <nav name="Mobile responsive" class="mob-nav" >
+            <div class="menu-icon" onclick="contentshow()" ondblclick="contentshowhide()">&#9776;</div>
+                <ul class="nav-links">
+                    <li class="list1"><a href="../index.html" class="list1">Home</a></li>
+                    <li class="list2"><a href="projects.html">Projects</a></li>
+                    <li class="list3"><a href="stack.html">Stacks & Certificates</a></li>
+                    <li  class="list5"><a href="html/resume.html">Resume</a></li>
+                    <li  class="list6"><a href="html/contact.html">contact</a></li>
+                </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="section1">
+            <div class="fullstack">
+                <h2>Fullstack</h2>
+                <ul>
+                    <li data-value="no" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/1174949_js_react js_logo_react_react native_icon.svg" alt="React-logo"></li>
+
+                    <li data-value="no" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/4375017_js_logo_node_icon.svg" alt="js-logo"></li>
+
+                    <li data-value="../images/certificates/html.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/3259426_html_media_social_icon.svg" alt="HTML-logo"></img></li>
+
+                    <li data-value="../images/certificates/css.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/317756_badge_css_css3_achievement_award_icon.svg" alt="CSS-logo"></li>
+                </ul>
+            </div>
+            <div class="AI">
+                <h2>Artificial Intelligence</h2>
+                <ul>
+                    <li data-value="../images/certificates/AI1.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/2890565_ai_artificial intelligence_automaton_brain_electronics_icon.svg" alt="AI"></li>
+
+                    <li data-value="../images/certificates/ml.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/9044704_machine_learning_model_icon.svg" alt="ML" style="background-color: white; border-radius: 35px;"></li>
+                </ul>
+            </div>
+            <div class="Others">
+                <h2>Others</h2>
+                <ul>
+                    <li data-value="../images/certificates/java.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/4373217_java_logo_logos_icon.svg" alt="Java"></li>
+
+                    <li data-value="../images/certificates/python.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/4518857_python_icon.svg" alt="Python"></li>
+
+                    <li data-value="../images/certificates/c.jpg" onclick="certificate(this.getAttribute('data-value'))"><img src="../images/3044870_c_extension_file_program_programming_icon.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section2">
+            <h1>Certificates</h1>
+            <div id="div">
+                <img src="" alt="Click The Stack to Aweken the Certificate" width="80%" height="70%" id="image" >
+            </div>
+            <div id="altmsg" style="display: none;">
+                <h3>The stack was learned throw youtube without the certificate</h3>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        const contentshow=()=>{
+            const linkvar=document.querySelector(".nav-links");
+            linkvar.style="display:block;"
+        }
+        const contentshowhide=()=>{
+            const linkvar=document.querySelector(".nav-links");
+            linkvar.style="display:none;" 
+        }
+        const certificate=(value)=>{
+            var imgvar=document.getElementById("image");
+            if(value==="no"){
+                const certificatenone=document.getElementById("altmsg");
+                certificatenone.style="display:block;"
+                imgvar.src=null;
+            }
+            if(value!=="no"){
+                const certificatenone=document.getElementById("altmsg");
+                certificatenone.style="display:none;"
+                imgvar.src=value;
+            }
+        }
+    </script>
+</body>
+</html>

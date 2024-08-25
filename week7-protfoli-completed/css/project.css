@@ -1,0 +1,48 @@
+/* Background setup
+-------------------------------------------------------------------------------------------------------------- */
+body{
+    background:url(../images/Black\ and\ White\ Minimalist\ Photocentric\ Desktop\ Wallpaper_20240818_165646_0000.png);
+    width: 100vw;
+    height: 100vh;
+}
+/* Header
+------------------------------------------------------------------------------------------------------------- */
+.Header{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+/* project
+--------------------------------------------------------------------------------------------------------------- */
+.project-section{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project{
+    background-color: white;
+    width:60% ;
+    margin: 20px;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgb(187, 0, 0);
+}
+.project-description{
+    height: 300px;
+    overflow: scroll;
+    padding: 10px 20px;
+}
+.project img{
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+}
+.project-description p,h2,li{
+    padding:10px;
+}

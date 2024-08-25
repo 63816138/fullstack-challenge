@@ -1,0 +1,102 @@
+
+/* Background Section 
+------------------------------------------------------------------------------------------------------------------------*/
+.Protfolio-web{
+    width: 100vw;
+    height:70vh;
+    background: url(../images/Mainpage.png) no-repeat center/cover;
+}
+@media screen and (max-width:830px){
+    .Protfolio-web{
+        width: 100%;
+        height: 100%;
+        background: url(../images/Welcom\,to\ my\ portfolio_20240810_103115_0000.png) no-repeat center/cover;  
+    }
+    .lap-nav{
+        display: none; 
+    }
+    .mob-nav{
+        display: flex;
+    }
+    .menu-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* display: block; */
+        color: white;
+        padding-bottom: 10px;
+        padding-right:20px ;
+        size: 2rem;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position:absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333;
+    }
+    .nav-links li{
+        display: none;
+        text-align: center;
+    }
+    .about-content{
+        width:900px;
+        height:500px;
+        overflow: scroll;
+    }
+    .about{
+        width: 100vw;
+    }
+    .about-content p{
+        padding: 0;
+        font-size: 10px;
+    }
+}
+@media screen and (max-height:550px) and (max-width:830px){
+    .Protfolio-web{
+        width: 100vw;
+        height:90vh;
+        background: url(../images/Mainpage.png) no-repeat center/cover;
+    }
+    .mob-nav{
+        display: none;
+    }
+    .lap-nav{
+        display: block;
+    }
+}
+
+
+/* About section 
+------------------------------------------------------------------------------------------------------------------------*/
+.about{
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.304);
+    height: max-content;
+    margin:30px 0;
+    
+    
+}
+.about-content{
+    padding: 20px;
+    margin-left: 20vw;
+    width: 60vw;
+    height: max-content;
+    box-shadow: 3px 3px 10px black;
+    font-size: 30px;
+    
+}
+.about-content p{
+    padding-top: 10px;
+    font-size: 16px;
+}
+.about-content h4{
+    width: 100%;
+    text-align: right;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="images/icon.svg">
+    <title>Protfolio | MUGESH R | FSD & AI</title>
+</head>
+<body>
+    <header class="Header">
+        <h1>Protfolio</h1>
+        <nav name="other device width" class="lap-nav">
+            <ul>
+                <li ><a href="C:\Users\Mugesh\Desktop\Weekend challenge\week5-portfoli-device-responsive\index.html">Home</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="html/stack.html">Stacks & Certificates</a></li>
+                <li><a href="html/resume.html">Resume</a></li>
+                <li><a href="html/contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <nav name="Mobile responsive" class="mob-nav" >
+            <div class="menu-icon" onclick="contentshow()" ondblclick="contentshowhide()">&#9776;</div>
+                <ul class="nav-links">
+                    <li ><a href="index.html" class="list1">Home</a></li>
+                    <li class="list2"><a href="">Projects</a></li>
+                    <li class="list3"><a href="html/stack.html">Stacks & Certificates</a></li>
+                    <li  class="list4"><a href="html/resume.html">Resume</a></li>
+                    <li  class="list5"><a href="html/contact.html">contact</a></li>
+                </ul>
+        </nav>
+        
+    </header>
+    <div class="Protfolio-web">
+        
+    </div>
+    <div class="about">
+            <div class="about-content">
+                <h3>About</h3>
+                <p>
+                    Hello, I'm Mugesh R from Salem, Tamil Nadu. I am currently pursuing my 3rd year in BE-CSE at Mahendra Engineering College (Autonomous), Namakkal. My short-term goal is to gain the skills necessary to become a full-stack developer (MERN) with expertise in AI. In the long term, I aspire to secure a job at Infosys. In my free time, I enjoy reading books, learning new skills, and spending time with my family and friends.
+                 </p>
+                 <h4>R.mugesh</h4>
+            </div>    
+    </div>
+    <script>
+        const contentshow=()=>{
+            const contentvar1=document.querySelector(".list1");
+            const contentvar2=document.querySelector(".list2");
+            const contentvar3=document.querySelector(".list3");
+            const contentvar4=document.querySelector(".list4");
+            const contentvar5=document.querySelector(".list5");
+            const contentvar6=document.querySelector(".list6");
+            contentvar1.style="display:block;";
+            contentvar2.style="display:block;";
+            contentvar3.style="display:block;";
+            contentvar4.style="display:block;";
+            contentvar5.style="display:block;";
+            contentvar6.style="display:block;";
+            
+        }
+        const contentshowhide=()=>{
+            const contentvar1=document.querySelector(".list1");
+            const contentvar2=document.querySelector(".list2");
+            const contentvar3=document.querySelector(".list3");
+            const contentvar4=document.querySelector(".list4");
+            const contentvar5=document.querySelector(".list5");
+            const contentvar6=document.querySelector(".list6");
+            contentvar1.style="display:none;";
+            contentvar2.style="display:none;";
+            contentvar3.style="display:none;";
+            contentvar4.style="display:none;";
+            contentvar5.style="display:none;";
+            contentvar6.style="display:none;";
+        }
+    </script>
+</body>
+</html>
