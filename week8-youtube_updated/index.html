@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube-Demo</title>
+    <link rel="icon" href="icons/4375133_logo_youtube_icon.svg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header section
+     -------------------------------------------------------------------------------------------- -->
+        <header>
+            <span>
+                <img src="icons/4375133_logo_youtube_icon.svg" alt="youtube-logo">
+                <h3>Youtube-Demo</h3>
+            </span>
+    
+            <input type="search" placeholder="Search">
+    
+            <ul class="headericons">
+                <li><img src="icons/2199111_add_create_new_plus_icon.svg"></li>
+                <li><img src="icons/2199103_bell_alert_notification_ring_icon.svg" alt="notification button"></li>
+                <li><img src="icons/370076_account_avatar_client_male_person_icon.svg" alt="account page"></li> 
+            </ul>
+        </header>
+
+
+    <!-- Navigation section
+     ------------------------------------------------------------------------------------------ -->
+     <div display="none" class="mobile_nav">
+        <img src="icons/5402398_list_menu_options_settings_checklist_icon.svg" alt="list" class="list_action" onclick="list_view()" ondblclick="list_view_none()">
+        <ul>
+            <li>Recommended For You</li>
+            <li onclick="scene_upload()">Tamil Movie Scene</li>
+            <li onclick="songs_upload()">Songs</li>
+            <li onclick="education_upload()">Education</li>
+        </ul>
+    </div>
+    <section class="main-content">
+        <div class="navigation">
+            <ul>
+                <span>
+                    <img src="icons/392500_estate_home_house_real_icon.svg" alt="home-icon">
+                    <li>Home</li>
+                </span>
+                <span>
+                    <img src="icons/9039905_camera_reels_icon.svg" alt="reels-icon">
+                    <li>Shorts</li>
+                </span>
+                <span>
+                    <img src="icons/8656173_subscription_youtube_menu_subs_social media_icon.svg" alt="Subscriptions">
+                    <li>Subscription</li>
+                </span>
+                <span>
+                    <img src="icons/8674989_ic_fluent_history_regular_icon.svg" alt="History-icons">
+                    <li>History</li>
+                </span>
+                <span>
+                    <img src="icons/352076_add_playlist_icon.svg" alt="playlist-icon">
+                    <li>Playlist</li>
+                </span>
+                <span>
+                    <img src="icons/3507767_alarm_clock_iconoteka_later_time_icon.svg" alt="watch-later">
+                    <li>Watch Later</li>
+                </span>
+                <span>
+                    <img src="icons/8324235_ui_essential_app_like_icon.svg" alt="Like">
+                    <li>Liked</li>
+                </span>               
+            </ul>
+        </div>
+        <div class="categories">
+            <ul>
+                <li>Recommended For You</li>
+                <li onclick="scene_upload()">Tamil Movie Scene</li>
+                <li onclick="songs_upload()">Songs</li>
+                <li onclick="education_upload()">Education</li>
+            </ul>
+            <div id="main-box">
+                <div class="content-box" >
+                <div class="content">
+                    <iframe width="250" height="250" src="https://www.youtube.com/embed/5QzzeYHApV0?si=huZ-6S6qSNWfsAyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2RQUDtI2VC8?si=cFKIiq664HU1Op_C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=7HHubO9kkFnY9SJy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IC5vBKc21X8?si=1Dciw5nYgdQkIA1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zbw5rbrgryo?si=UADjdsC13nJ2pCjj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TlB_eWDSMt4?si=ASwiGw0OwZHGbuZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ORyi6tTMNqE?si=On2Qx9hH-JKqAtLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="250" height="250" src="https://www.youtube.com/embed/5QzzeYHApV0?si=huZ-6S6qSNWfsAyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="content">
+                    <iframe width="250" height="250" src="https://www.youtube.com/embed/5QzzeYHApV0?si=huZ-6S6qSNWfsAyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/action.js">
+
+    </script>
+</body>
+</html>
